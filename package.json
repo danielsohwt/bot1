@@ -1,0 +1,15 @@
+{
+  "name": "bot-workshop",
+  "version": "1.0.0",
+  "description": "Building my own express server!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Soh",
+  "license": "ISC",
+  "dependencies": {
+    "botbuilder": "^3.9.1",
+    "express": "^4.15.4"
+  }
+}
