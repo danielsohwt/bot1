@@ -21,7 +21,7 @@ const connector = new builder.ChatConnector({
   appPassword: process.env.MICROSOFT_APP_PASSWORD,
 });
 
-app.listen(3978, () => {
+app.listen(3979, () => {
   console.log('Chatbot server started and listening to port 3978');
 });
 app.post('/api/messages', connector.listen());
