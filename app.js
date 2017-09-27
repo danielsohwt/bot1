@@ -21,9 +21,9 @@ const connector = new builder.ChatConnector({
   appPassword: process.env.MICROSOFT_APP_PASSWORD,
 });
 
-app.listen(3979, () => {
-  console.log('Chatbot server started and listening to port 3978');
-});
+app.listen(process.env.port || 3978, () => {
+    console.log('Chatbot server started and listening to port 3978');
+  });
 app.post('/api/messages', connector.listen());
 
 const bot = new builder.UniversalBot(connector);
